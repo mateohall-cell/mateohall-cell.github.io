@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoActúa | Cuidemos el planeta</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8f3;
+    color: #26382b;
+    line-height: 1.6;
+}
+
+header {
+    background: #174b32;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #a8e6a1;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(
+        rgba(10,50,30,.75),
+        rgba(10,50,30,.75)
+    ), url("https://images.unsplash.com/photo-1448375240586-882707db888b?w=1400")
+    center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 650px;
+    margin: auto;
+}
+
+button {
+    background: #8bd17c;
+    color: #174b32;
+    border: none;
+    padding: 14px 25px;
+    margin-top: 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b3efa6;
+}
+
+section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #22613e;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1 1 220px;
+    max-width: 320px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.tarjeta h3 {
+    color: #287446;
+    margin-bottom: 12px;
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.propuesta {
+    background: #e4f1e2;
+}
+
+footer {
+    background: #174b32;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 12px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌱 EcoActúa</div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#problema">Problema</a>
+        <a href="#soluciones">Soluciones</a>
+        <a href="#acciones">Acciones</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+    <h1>Un planeta, nuestro futuro</h1>
+    <p>
+        El cambio climático es un problema que nos afecta
+        a todos. Con pequeñas acciones podemos construir
+        un futuro más sostenible.
+    </p>
+
+    <button onclick="irAcciones()">
+        ¡Únete ahora!
+    </button>
+</section>
+
+<section id="problema">
+    <h2>El problema</h2>
+    <p>
+        El cambio climático provoca temperaturas más altas,
+        sequías, incendios y cambios en los ecosistemas.
+        Es importante actuar antes de que el problema empeore.
+    </p>
+
+    <div class="contenedor">
+        <article class="tarjeta">
+            <h3>🌡️ Calentamiento global</h3>
+            <p>El aumento de la temperatura afecta al planeta.</p>
+        </article>
+
+        <article class="tarjeta">
+            <h3>🌳 Deforestación</h3>
+            <p>La pérdida de bosques perjudica a los ecosistemas.</p>
+        </article>
+
+        <article class="tarjeta">
+            <h3>🌊 Contaminación</h3>
+            <p>Los residuos y emisiones dañan el medio ambiente.</p>
+        </article>
+    </div>
+</section>
+
+<section class="propuesta" id="soluciones">
+    <h2>Nuestra propuesta</h2>
+    <p>
+        En EcoActúa queremos promover hábitos responsables
+        para reducir nuestro impacto ambiental.
+    </p>
+
+    <div class="contenedor">
+        <article class="tarjeta">
+            <h3>Energías limpias</h3>
+            <p>Utilizar fuentes de energía renovables.</p>
+        </article>
+
+        <article class="tarjeta">
+            <h3>Reciclaje</h3>
+            <p>Separar residuos y reutilizar materiales.</p>
+        </article>
+
+        <article class="tarjeta">
+            <h3>Reforestación</h3>
+            <p>Proteger los árboles y las áreas verdes.</p>
+        </article>
+    </div>
+</section>
+
+<section id="acciones">
+    <h2>Tú puedes ayudar</h2>
+    <p>Estas son algunas acciones que puedes realizar:</p>
+
+    <div class="contenedor">
+        <article class="tarjeta">
+            <h3>💧 Ahorrar agua</h3>
+            <p>Cerrar las llaves cuando no las utilices.</p>
+        </article>
+
+        <article class="tarjeta">
+            <h3>♻️ Reciclar</h3>
+            <p>Separar la basura correctamente.</p>
+        </article>
+
+        <article class="tarjeta">
+            <h3>🚲 Transporte</h3>
+            <p>Caminar o utilizar bicicleta cuando sea posible.</p>
+        </article>
+    </div>
+
+    <button onclick="mensaje()">
+        Conocer mi compromiso
+    </button>
+</section>
+
+</main>
+
+<footer id="contacto">
+    <h3>🌱 EcoActúa</h3>
+    <p>El cambio empieza contigo.</p>
+    <p>Proyecto escolar basado en la Agenda 2030 - ODS 13.</p>
+    <p>Fuentes: Naciones Unidas y Agenda 2030.</p>
+    <p>© 2026 EcoActúa</p>
+</footer>
+
+<script>
+function irAcciones() {
+    document.getElementById("acciones").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+function mensaje() {
+    alert("¡Gracias por comprometerte con el planeta! 🌎");
+}
+</script>
+
+</body>
+</html>
